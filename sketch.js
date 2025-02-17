@@ -12,6 +12,8 @@ const makeGrid = (cols, rows) =>{
 
 let grid = []; // the grid that will be drawn on top of the canvas
 let particle = 5; // the size of each cell
+let cols = 0
+let rows = 0
 
 const setup = () =>{
   createCanvas(800, 600) // this is a p5 that will be the window -- doing this without p5 would be an event listener on a designated div to be the canvas
