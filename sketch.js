@@ -13,5 +13,13 @@ class Grid {
     this.grid[y * this.width + x] = color;
   }
   
-
+  swap(a, b) {
+    const temp = this.grid[a];
+    this.grid[a] = this.grid[b];
+    this.grid[b] = temp;
+  }
+  
+  isEmpty(index) {
+    return this.grid[index] === 0;
+  }
 }
