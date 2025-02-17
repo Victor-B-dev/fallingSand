@@ -9,4 +9,9 @@ class Grid {
     this.grid = new Array(this.width * this.height).fill(0);
   }
 
+  set(x, y, color) {
+    this.grid[y * this.width + x] = color;
+  }
+  
+
 }
